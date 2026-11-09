@@ -1,0 +1,17 @@
+.timer__button-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.start-button {
+    margin-right: 0;
+}
+
+.stop-button,
+.reset-button  {
+    width: 60px;
+    border-radius: 214px;
+}

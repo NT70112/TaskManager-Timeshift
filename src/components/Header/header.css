@@ -1,0 +1,120 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px 8px 8px 0;
+    padding: 8px 20px;
+    max-width: 1128px;
+    height: 42px;
+    box-shadow: 2px 0 19px -5px rgba(0, 0, 0, 0.25);
+    background: #fff;
+    margin-top: 20px;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.showTasksArrow {
+    display: none;
+}
+
+.buttons__container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    letter-spacing: -0.04em;
+    color: #888;
+}
+
+.leet-code {
+    fill: #fff;
+    stroke-width: 1px;
+    stroke: #9a9a9a;
+}
+
+.task-bg {
+    display: block;
+    position: absolute;
+
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+    width: 407px;
+    background: #fff;
+    z-index: -13;
+}
+
+.button-container {
+    width: 56px;
+    height: 24px;
+    background-color: #242424;
+    display: block;
+    border-radius: 80px;
+    position: relative;
+}
+
+.dot-button {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 3px;
+    left: 4px;
+    display: block;
+    background: #ffffff;
+    border-radius: 100%;
+    transition: all 0.38s;
+}
+
+.dot-button--move {
+    transform: translateX(29px);
+    background-color: #242424;
+    top: 2px;
+}
+
+.button-container--white {
+    background-color: #ffffff;
+    border: 1px solid #242424;
+}
+
+.black-bg {
+    background-color: #242424;
+}
+
+@media(max-width: 1070px) {
+    .header-container {
+        width: min(807px, 100%);
+        margin-inline: auto;
+    }
+
+    .header {
+        width: 100%;
+        max-width: none;
+        z-index: 2;
+    }
+
+    .task-bg {
+        display: none;
+        left: 50%;
+        width: min(807px, calc(100vw - 83px));
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    .task-bg--visible {
+        display: block;
+    }
+
+    .showTasksArrow {
+        display: block;
+        cursor: pointer;
+        transform: translateY(1px);
+    }
+}
+
+.reverse{
+    transform: rotate(180deg);
+}
